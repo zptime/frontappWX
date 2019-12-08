@@ -1,0 +1,191 @@
+body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    border: none;
+    color: #444;
+    font-weight: normal;
+    font-family: "Microsoft Yahei";
+    box-sizing: border-box;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-font-smoothing: antialiased;
+    &:hover{
+        outline: none;
+    }
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+    background-color: #F5F5F5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
+
+input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
+    -webkit-appearance: none;
+}
+
+textarea { -webkit-appearance: none;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+.clear:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.clear{
+    zoom:1;
+}
+
+.back_img{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.margin{
+    margin: 0 auto;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.paddingTop{
+    padding-top: 1.95rem;
+}
+
+@keyframes backOpacity{
+   0%   { opacity: 1 }
+   25%  { opacity: .5 }
+   50%  { opacity: 1 }
+   75%  { opacity: .5 }
+   100% { opacity: 1 }
+}
+
+.animation_opactiy{
+    animation: backOpacity 2s ease-in-out infinite;
+}
+
+.clb:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+
+/* Toast 自定义样式*/
+.weui-toast__content{
+  color:#fff;
+}
+
+/* ActionSheet 自定义样式*/
+.action-title{
+  font-size: 0.6rem;
+  color:#666;
+}
+.action-del{
+  color:red;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  font-size:0.7rem;
+  color:#aaa;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  font-size:0.7rem;
+  color:#aaa;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  font-size:0.7rem;
+  color:#aaa;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  font-size:0.7rem;
+  color:#aaa;
+}
+
+//水平垂直居中
+.middleCenter{
+  text-align: center;
+  display:flex;/*Flex布局*/
+  display: -webkit-flex; /* Safari */
+  justify-content: center;/*实现水平居中*/
+  align-items:center; /*实现垂直居中*/
+}
+
+/* tab  tabItem自定义样式 */
+.vux-tab .vux-tab-item{
+  font-size:0.8rem !important;
+  color:#444 !important;
+  background: none !important;
+}
+
+/* scroller 滚动插件自定义样式*/
+.xs-plugin-pulldown-container,.xs-plugin-pullup-container{
+  font-size:14px;
+  color:#444;
+  line-height:30px;
+}
+.xs-plugin-pullup-container{
+  opacity: 0 ;
+}
+.xs-container{
+  background-color: #fff;
+}
+
+/*提示信息样式*/
+.tip-content{
+  text-align: center;
+  margin-top:3rem;
+  color:#444;
+  font-size: 0.8rem;
+  padding: 0 0.75rem;
+}
+.tip-content .tip-none{
+  margin:0.5rem 0 0.3rem 0;
+}
+
+
